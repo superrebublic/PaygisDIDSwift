@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EDFC85941FE39AF50029446F /* PaygisDIDSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFC85921FE39AF50029446F /* PaygisDIDSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDFC859B1FE39B580029446F /* PayegisDID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC859A1FE39B580029446F /* PayegisDID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDFC858F1FE39AF50029446F /* PaygisDIDSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaygisDIDSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFC85921FE39AF50029446F /* PaygisDIDSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaygisDIDSwift.h; sourceTree = "<group>"; };
 		EDFC85931FE39AF50029446F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFC859A1FE39B580029446F /* PayegisDID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayegisDID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFC85921FE39AF50029446F /* PaygisDIDSwift.h */,
+				EDFC859A1FE39B580029446F /* PayegisDID.swift */,
 				EDFC85931FE39AF50029446F /* Info.plist */,
 			);
 			path = PaygisDIDSwift;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					EDFC858E1FE39AF50029446F = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFC859B1FE39B580029446F /* PayegisDID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		EDFC85981FE39AF50029446F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongfudun.zhangyan.PaygisDIDSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +280,7 @@
 		EDFC85991FE39AF50029446F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char PaygisDIDSwiftVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PaygisDIDSwift/PublicHeader.h>
 
+//#import <PaygisDIDSwift/PayegisDID.h>
 
